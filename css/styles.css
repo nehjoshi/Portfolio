@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+  height: 100vh;
+}
+
+body.dark {
+  background-color: #222121;
+}
+
+.toggler {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+}
+
+.hero {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80vh;
+  z-index: 50;
+}
+
+.profile-img {
+  height: 700px;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox:checked + .label .ball {
+  -webkit-transform: translateX(41px);
+          transform: translateX(41px);
+}
+
+.label {
+  background-color: #221c1c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  height: 35px;
+  width: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  color: #cccc5f;
+  position: relative;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.label.light {
+  background-color: #fff;
+}
+
+.ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.ball:hover {
+  cursor: pointer;
+}
+
+.ball.dark {
+  background-color: #221c1c;
+}
+
+.fa-moon, .fa-sun {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    transition: 0.2s all ease;
+    height: 100vh;
+}
+body.dark {
+    background-color: rgb(34, 33, 33);
+}
+.toggler {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+}
+.hero {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    z-index: 50;
+}
+.profile-img {
+    height: 700px;
+}
+.checkbox {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(41px);
+}
+.label {
+    background-color: rgb(34, 28, 28);
+    display: flex;
+    border-radius: 50px;
+    height: 35px;
+    width: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    color: rgb(204, 204, 95);
+    position: relative;
+    transition: 0.2s all ease;
+}
+.label.light {
+    background-color: #fff;
+}
+.ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.2s all ease;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.ball.dark {
+    background-color: rgb(34, 28, 28);
+}
+.fa-moon, .fa-sun {
+    font-size: 1.2rem;
+}
