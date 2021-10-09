@@ -21,14 +21,14 @@ body.dark {
 
 .nav {
   position: absolute;
-  padding: 20px 100px 0px 30px;
+  padding: 20px 100px 20px 30px;
   width: 100%;
   color: #fff;
   z-index: 101;
 }
 
 .nav h2 {
-  width: 20%;
+  display: inline-block;
 }
 
 .nav .nav-links {
@@ -37,7 +37,16 @@ body.dark {
 
 .nav .nav-links li {
   display: inline-block;
-  padding: 0rem 2rem;
+  margin: 0px 20px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.nav .nav-links li:hover {
+  border-color: #fff;
+  cursor: pointer;
 }
 
 .toggler {
@@ -73,8 +82,8 @@ body.dark {
 }
 
 .checkbox:checked + .label .ball {
-  -webkit-transform: translateX(41px);
-          transform: translateX(41px);
+  -webkit-transform: translateX(47px);
+          transform: translateX(47px);
 }
 
 .label {
@@ -83,7 +92,7 @@ body.dark {
   display: -ms-flexbox;
   display: flex;
   border-radius: 50px;
-  height: 35px;
+  height: 30px;
   width: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -104,8 +113,8 @@ body.dark {
 
 .ball {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: 0.2s all ease;
