@@ -20,12 +20,23 @@ body.dark {
     padding: 20px 100px 20px 30px;
     width: 100%;
     color: #fff;
+    @media screen and (max-width: 998px) {
+        background-color: #089cfc;
+        padding: 20px 0px 20px 0px;
+    }
     z-index: 101;
     h2 {
         display: inline-block;
+        @media screen and (max-width: 760px){
+            text-align: center;
+            display: block;
+        }
     }
     .nav-links {
         float: right;
+        @media screen and (max-width: 760px){
+            display: none;
+        }
     }
     .nav-links li{
         display: inline-block;
@@ -37,6 +48,11 @@ body.dark {
             border-color: #fff;
             cursor: pointer;
         }
+    }
+}
+.nav.dark {
+    @media screen and (max-width: 998px) {
+        background-color: #404040;
     }
 }
 .toggler {
@@ -96,4 +112,9 @@ body.dark {
 }
 .fa-moon, .fa-sun {
     font-size: 1.2rem;
+}
+.top-wave-wrapper {
+    @media screen and (max-width: 998px) {
+        display: none;
+    }
 }

@@ -27,12 +27,32 @@ body.dark {
   z-index: 101;
 }
 
+@media screen and (max-width: 998px) {
+  .nav {
+    background-color: #089cfc;
+    padding: 20px 0px 20px 0px;
+  }
+}
+
 .nav h2 {
   display: inline-block;
 }
 
+@media screen and (max-width: 760px) {
+  .nav h2 {
+    text-align: center;
+    display: block;
+  }
+}
+
 .nav .nav-links {
   float: right;
+}
+
+@media screen and (max-width: 760px) {
+  .nav .nav-links {
+    display: none;
+  }
 }
 
 .nav .nav-links li {
@@ -47,6 +67,12 @@ body.dark {
 .nav .nav-links li:hover {
   border-color: #fff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 998px) {
+  .nav.dark {
+    background-color: #404040;
+  }
 }
 
 .toggler {
@@ -131,5 +157,11 @@ body.dark {
 
 .fa-moon, .fa-sun {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 998px) {
+  .top-wave-wrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
