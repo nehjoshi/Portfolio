@@ -157,11 +157,11 @@ body.dark {
     box-sizing: border-box;
   }
   .slider-text1 {
-    background: #98F58A;
+    background: #907BB7;
     animation: slide 15s linear infinite;
   }
   .slider-text2 {
-    background: skyblue;
+    background: rgb(135, 206, 235);
   }
   .slider-text3 {
     background: lightcoral;
@@ -197,8 +197,11 @@ body.dark {
 .main-text {
     width: 65%;
     margin-top: 20px;
+    @media screen and (max-width: 760px) {
+        width: 85%;
+    }
     p {
-    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
     text-align: center;
     line-height: 170%;
     transition: 0.2s all ease;

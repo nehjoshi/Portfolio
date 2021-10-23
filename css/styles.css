@@ -227,7 +227,7 @@ body.dark {
 }
 
 .slider-text1 {
-  background: #98F58A;
+  background: #907BB7;
   -webkit-animation: slide 15s linear infinite;
           animation: slide 15s linear infinite;
 }
@@ -320,8 +320,14 @@ body.dark {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 760px) {
+  .main-text {
+    width: 85%;
+  }
+}
+
 .main-text p {
-  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
   text-align: center;
   line-height: 170%;
   -webkit-transition: 0.2s all ease;
