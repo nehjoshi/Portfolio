@@ -67,6 +67,10 @@ body.dark {
     top: 60px;
     z-index: 102;
     @media screen and (max-width: 998px) {
+        left: 10px;
+        top: 80px;
+    }
+    @media screen and (max-width: 760px) {
         top: 20px;
     }
 }
