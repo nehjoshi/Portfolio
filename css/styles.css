@@ -7,13 +7,13 @@
   text-decoration: none;
   font-family: "Lato";
   list-style-type: none;
+  scroll-behavior: smooth;
 }
 
 body {
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   height: 100vh;
-  scroll-behavior: smooth;
 }
 
 body.dark {

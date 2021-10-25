@@ -9,11 +9,11 @@ $text-color: rgb(129, 123, 123);
     text-decoration: none;
     font-family: $main-font;
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 body {
     transition: 0.2s all ease;
     height: 100vh;
-    scroll-behavior: smooth;
 }
 body.dark {
     background-color: rgb(34, 33, 33);
