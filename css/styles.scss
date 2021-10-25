@@ -124,6 +124,7 @@ body.dark {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     justify-content: center;
     h1 {
         color: $heading-color;
@@ -242,5 +243,67 @@ body.dark {
     }
     .divider .circle {
         background-color: #404040;
+    }
+}
+.about {
+    height: 100vh;
+    width: 100%;
+    transition: all 0.2s ease;
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+        position: relative;
+        top: 20px;
+        color: $heading-color;
+        opacity: 0;
+    }
+}
+.skill-wrapper{
+    display: flex;
+    margin-top: 50px;
+    background-color: #089cfc;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: 998px) {
+        flex-direction: column;
+        height: fit-content;
+        padding: 80px;
+    }
+    .each-skill {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 998px){
+            width: 100%;    
+            margin: 40px 0px;
+
+        }   
+        i {
+            color: #fff;
+            opacity: 0;
+            top: 20px;
+            font-size: 4rem;
+            margin: 20px;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            line-height: 25px;
+            opacity: 0;
+            position: relative;
+            top: 30px;
+        }
+    }
+
+}
+.about.dark {
+    .skill-wrapper {
+        background-color: #404040;
+    }
+    h1 {
+        color: #fff;
     }
 }

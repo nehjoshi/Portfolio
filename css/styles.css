@@ -178,6 +178,7 @@ body.dark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -382,5 +383,97 @@ body.dark {
 
 .main.dark .divider .circle {
   background-color: #404040;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 5rem;
+  position: relative;
+  top: 20px;
+  color: #2e2c2c;
+  opacity: 0;
+}
+
+.skill-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  background-color: #089cfc;
+  height: 300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 998px) {
+  .skill-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 80px;
+  }
+}
+
+.skill-wrapper .each-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 998px) {
+  .skill-wrapper .each-skill {
+    width: 100%;
+    margin: 40px 0px;
+  }
+}
+
+.skill-wrapper .each-skill i {
+  color: #fff;
+  opacity: 0;
+  top: 20px;
+  font-size: 4rem;
+  margin: 20px;
+}
+
+.skill-wrapper .each-skill p {
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  opacity: 0;
+  position: relative;
+  top: 30px;
+}
+
+.about.dark .skill-wrapper {
+  background-color: #404040;
+}
+
+.about.dark h1 {
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

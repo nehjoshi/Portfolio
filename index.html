@@ -33,7 +33,7 @@
     <div class="hero">
         <!-- <img src="images/profile.png" class="profile-img"> -->
     </div>
-    <svg style="position: absolute; top: 0" viewBox="0 0 1440 320" class="top-wave-wrapper">
+    <svg style="position: absolute; top: 0; z-index: 100" viewBox="0 0 1440 320" class="top-wave-wrapper">
         <path fill="#0099ff" fill-opacity="1" class="top-wave"
             d="M0,192L60,165.3C120,139,240,85,360,64C480,43,600,53,720,85.3C840,117,960,171,1080,192C1200,213,1320,203,1380,197.3L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
         </path>
@@ -62,10 +62,38 @@
                 contributed to numerous projects, and collaborated with others at OWASP VITCC for open-source code. Able
                 to work in a team to produce quality content within tight deadlines. </p>
         </div>
-        <div class="main-button">
-            Read more
-        </div>
+        <a href="#about">
+            <div class="main-button">
+                Read more
+            </div>
+        </a>
     </main>
+    <section class="about" id="about">
+        <h1 class="about-heading">About</h1>
+        <div class="skill-wrapper">
+            <div class="each-skill">
+                <i class="fas fa-quidditch"></i>
+                <p class="skill-text" id="skill-1">Top quality content and designs to suit all your needs. Top quality
+                    content and
+                    designs to suit all your needs.</p>
+            </div>
+            <div class="each-skill">
+                <i class="fas fa-server"></i>
+                <p class="skill-text" id="skill-2">Top quality content and designs to suit all your needs. Top quality
+                    content and
+                    designs to suit all your needs.</p>
+            </div>
+            <div class="each-skill">
+                <i class="fas fa-hands-helping"></i>
+                <p class="skill-text" id="skill-3">Top quality content and designs to suit all your needs. Top quality
+                    content and
+                    designs to suit all your needs.</p>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
