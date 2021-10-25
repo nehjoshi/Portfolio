@@ -20,6 +20,38 @@ body.dark {
   background-color: #222121;
 }
 
+#up-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #404040;
+  color: #fff;
+  position: fixed;
+  opacity: 0;
+  bottom: 0px;
+  display: none;
+  right: 20px;
+  z-index: 900;
+}
+
+#up-wrapper:hover {
+  cursor: pointer;
+}
+
+#up-wrapper.dark {
+  background-color: #fff;
+  color: #000;
+}
+
 .nav {
   position: absolute;
   padding: 20px 100px 20px 30px;

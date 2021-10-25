@@ -7,6 +7,11 @@ const bottomWave = document.querySelector(".bottom-wave");
 const main = document.querySelector(".main");
 const about = document.querySelector(".about-heading");
 const aboutWrapper = document.querySelector(".about");
+const upWrapper = document.getElementById("up-wrapper");
+const scrollUp = () => {
+    window.scrollTo(0, 0);
+}
+
 ck.addEventListener("change", () => {
     document.body.classList.toggle("dark");
     label.classList.toggle("light");
@@ -14,6 +19,7 @@ ck.addEventListener("change", () => {
     main.classList.toggle("dark");
     navWrapper.classList.toggle("dark");
     aboutWrapper.classList.toggle("dark");
+    upWrapper.classList.toggle("dark");
     // if (bottomWave.getAttribute("fill") === "#404040"){
     //     bottomWave.setAttribute("fill", "#0099ff");
     // }
@@ -55,6 +61,17 @@ const animate = (ele, del) => {
         delay: del
     });
 }
+gsap.to("#up-wrapper", {
+    scrollTrigger: {
+        trigger: main,
+        start: 'bottom center',
+        toggleActions: 'play none none reverse'
+    },
+    display: 'flex',
+    opacity: 1,
+    bottom: 30,
+    duration: 0.3
+})
 animate(".fa-quidditch", 0.5);
 animate(".fa-server", 0.7);
 animate(".fa-hands-helping", 0.9);
