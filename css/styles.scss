@@ -13,7 +13,7 @@ $text-color: rgb(129, 123, 123);
 }
 body {
     transition: 0.2s all ease;
-    height: 100vh;
+    
 }
 body.dark {
     background-color: rgb(34, 33, 33);
@@ -270,7 +270,9 @@ body.dark {
 }
 .about {
     height: 100vh;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
     transition: all 0.2s ease;
     h1 {
         text-align: center;
@@ -279,6 +281,32 @@ body.dark {
         top: 20px;
         color: $heading-color;
         opacity: 0;
+    }
+}
+.about-inner {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    
+    .about-text {
+        h3 {
+            font-size: 3.5rem;
+            color: $heading-color;
+            line-height: 130%;
+        }
+        p {
+            color: $text-color;
+            line-height: 150%;
+            font-size: 1.2rem;
+        }
+        width: 50%;
+    }
+    .about-img-wrapper {
+        border-bottom: 1px solid gray;
+        width: 40%;
+        display: flex;
+        justify-content: center;
     }
 }
 .skill-wrapper{

@@ -13,7 +13,6 @@
 body {
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
-  height: 100vh;
 }
 
 body.dark {
@@ -419,7 +418,9 @@ body.dark {
 
 .about {
   height: 100vh;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -431,6 +432,46 @@ body.dark {
   top: 20px;
   color: #2e2c2c;
   opacity: 0;
+}
+
+.about-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-inner .about-text {
+  width: 50%;
+}
+
+.about-inner .about-text h3 {
+  font-size: 3.5rem;
+  color: #2e2c2c;
+  line-height: 130%;
+}
+
+.about-inner .about-text p {
+  color: #817b7b;
+  line-height: 150%;
+  font-size: 1.2rem;
+}
+
+.about-inner .about-img-wrapper {
+  border-bottom: 1px solid gray;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skill-wrapper {
