@@ -8,6 +8,7 @@ const main = document.querySelector(".main");
 const about = document.querySelector(".about-heading");
 const aboutWrapper = document.querySelector(".about");
 const upWrapper = document.getElementById("up-wrapper");
+const skills = document.querySelector(".skills");
 const scrollUp = () => {
     window.scrollTo(0, 0);
 }
@@ -20,6 +21,7 @@ ck.addEventListener("change", () => {
     navWrapper.classList.toggle("dark");
     aboutWrapper.classList.toggle("dark");
     upWrapper.classList.toggle("dark");
+    skills.classList.toggle("dark");
     // if (bottomWave.getAttribute("fill") === "#404040"){
     //     bottomWave.setAttribute("fill", "#0099ff");
     // }

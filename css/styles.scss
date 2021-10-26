@@ -269,11 +269,14 @@ body.dark {
     }
 }
 .about {
-    height: 100vh;
+    height: fit-content;
     width: 80%;
     margin: 0 auto;
     position: relative;
     transition: all 0.2s ease;
+    @media screen and (max-width: 998px) {
+        width: 90%;
+    }
     h1 {
         text-align: center;
         font-size: 5rem;
@@ -287,6 +290,9 @@ body.dark {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
+    @media screen and (max-width: 998px) {
+        flex-direction: column;
+    }
     align-items: center;
     
     .about-text {
@@ -301,17 +307,85 @@ body.dark {
             font-size: 1.2rem;
         }
         width: 50%;
+        @media screen and (max-width: 998px) {
+            width: 100%;
+            margin: 20px 0px;
+            text-align: center;
+        }
     }
     .about-img-wrapper {
-        border-bottom: 1px solid gray;
         width: 40%;
         display: flex;
         justify-content: center;
+        img {
+            @media screen and (max-width: 998px) {
+                height: 250px !important;
+            }
+        }
+    }
+}
+.about.dark {
+    .about-inner {
+        .about-text {
+            h3 {
+                color: #fff;
+            }
+            p {
+                color: rgb(209, 209, 209);
+            }
+        }
+    }
+}
+.skills {
+    width: 100%;
+    margin-top: 30px;
+    h1 {
+        color: $heading-color;
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+.skill-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    @media screen and (max-width: 998px) {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .skill-card {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px;
+        flex-direction: column;
+        background-color: #fff;
+        height: 300px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 2px;
+        @media screen and (max-width: 998px) {
+            width: 90%;
+            margin: 20px 0px;
+        }
+        h3 {
+            font-size: 2rem;
+            color: $heading-color;
+            line-height: 150%;
+        }
+        p {
+            color: rgb(54, 54, 54);
+            font-size: 1.1rem;
+            line-height: 135%;
+        }
     }
 }
 .skill-wrapper{
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
+    position: relative;
     background-color: #089cfc;
     height: 300px;
     justify-content: space-around;
@@ -349,6 +423,19 @@ body.dark {
         }
     }
 
+}
+.skills.dark {
+    h1 {
+        color: #fff;
+    }
+    .skill-card-wrapper {
+        .skill-card {
+            background-color: #404040;
+            h3, p {
+                color: #fff;
+            }
+        }
+    }
 }
 .about.dark {
     .skill-wrapper {
