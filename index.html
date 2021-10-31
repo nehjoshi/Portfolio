@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Neh Joshi">
     <meta name="description" content="Neh Joshi's personal portfolio">
-    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fc236c3dc0.js" crossorigin="anonymous"></script>
     <title>Neh Joshi | Web Developer</title>
@@ -72,10 +72,10 @@
 
     <section class="about" id="about">
         <h1 class="about-heading">About</h1>
-        <div class="about-inner">
-            <div class="about-text">
-                <h3>What I do</h3>
-                <p>I'm a Web Developer, experienced particularly in the frontend aspect. As of now, I'm in the third
+        <div class="about-inner" id="a-i1">
+            <div class="about-text a-t1" >
+                <h3 class="about-text-h3">What I do</h3>
+                <p class="about-text-p">I'm a Web Developer, experienced particularly in the frontend aspect. As of now, I'm in the third
                     year
                     of my Bachelor in Technology (B.Tech) - Electronics and Communications Engineering. I study at
                     Vellore Institute Of Technlogy, Chennai, India</p>
@@ -84,8 +84,8 @@
                 <img src="images/profile.png" style="height: 370px">
             </div>
         </div><br /><br />
-        <div class="about-inner">
-            <div class="about-text">
+        <div class="about-inner" id="a-i2">
+            <div class="about-text a-t2" >
                 <h3>Open Source Contribution</h3>
                 <p>As a Development Manager at OWASP VITCC, my role is to spread awareness about cyber security by
                     organizing workshops, competitions, hands-on sessions, publishing blogs and more. </p>
@@ -94,8 +94,8 @@
                 <img src="images/certificate.png" style="height: 300px">
             </div>
         </div><br />
-        <div class="about-inner">
-            <div class="about-text">
+        <div class="about-inner" id="a-i3">
+            <div class="about-text a-t3" >
                 <h3>My Journey</h3>
                 <p>I started learning web development, with absolutely zero knowledge in July 2020. After about a year
                     and a half, I am now able to create sophisticated and mobile-friendly pages like this, and can also
@@ -109,37 +109,54 @@
     <section class="skills">
         <h1>Skills</h1>
         <div class="skill-card-wrapper">
-            <div class="skill-card">
+            <div class="skill-card" id="card1">
                 <img src="images/react-logo.png" style="height: 100px">
                 <h3>React.JS</h3>
                 <p>I've always loved React.js, especially the thing that you can reuse components!</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card" id="card2">
                 <img src="images/html-logo.png" style="height: 100px;">
                 <h3>HTML</h3>
                 <p>Not much to say about HTML. The most fundamental language a web developer starts off with.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card" id="card3">
                 <img src="images/sass-logo.png" style="height: 100px">
                 <h3>SASS</h3>
                 <p>Nowadays, SASS has become the default CSS preprocessor for all frontend web developers - including me!</p>
             </div>
         </div>
         <div class="skill-card-wrapper">
-            <div class="skill-card">
+            <div class="skill-card" id="card4">
                 <img src="images/js-logo.png" style="height: 100px">
                 <h3>JavaScript</h3>
                 <p>A language that always keeps evolving - a challenge for web developers! </p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card" id="card5">
                 <img src="images/node-logo.png" style="height: 80px;">
                 <h3>Node.Js</h3>
                 <p>Not much to say about HTML. The most fundamental language a web developer starts off with.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card" id="card6">
                 <img src="images/mdb-logo.png" style="height: 100px">
                 <h3>MongoDB</h3>
                 <p>The king of NoSQL databases - I love using MongoDB with Node and Express, as it can be integrated very easily!</p>
+            </div>
+        </div>
+        <div class="skill-card-wrapper">
+            <div class="skill-card" id="card7">
+                <img src="images/gatsby-logo.png" style="height: 100px">
+                <h3>Gatsby-js</h3>
+                <p>A language that always keeps evolving - a challenge for web developers! </p>
+            </div>
+            <div class="skill-card" id="card8">
+                <img src="images/rwd.png" style="height: 80px;">
+                <h3>Responsive Web Design</h3>
+                <p>Not much to say about HTML. The most fundamental language a web developer starts off with.</p>
+            </div>
+            <div class="skill-card" id="card9">
+                <!-- <img src="images/rwd.png" style="height: 80px;">
+                <h3>Responsive Web Design</h3>
+                <p>Not much to say about HTML. The most fundamental language a web developer starts off with.</p> -->
             </div>
         </div>
     </section>
@@ -168,7 +185,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

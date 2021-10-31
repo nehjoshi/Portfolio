@@ -289,6 +289,9 @@ body.dark {
 .about-inner {
     display: flex;
     margin-top: 30px;
+    position: relative;
+    top: 30px;
+    opacity: 0;
     justify-content: space-between;
     @media screen and (max-width: 998px) {
         flex-direction: column;
@@ -325,15 +328,14 @@ body.dark {
     }
 }
 .about.dark {
-    .about-inner {
-        .about-text {
-            h3 {
-                color: #fff;
-            }
-            p {
-                color: rgb(209, 209, 209);
-            }
-        }
+    h1 {
+        color: #fff;
+    }
+    .about-inner > .about-text > h3 {
+        color: #fff;
+    }
+    .about-inner > .about-text > p {
+        color: rgb(196, 196, 196);
     }
 }
 .skills {
@@ -357,6 +359,9 @@ body.dark {
     .skill-card {
         width: 30%;
         display: flex;
+        top: 50px;
+        position: relative;
+        opacity: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -437,11 +442,9 @@ body.dark {
         }
     }
 }
-.about.dark {
-    .skill-wrapper {
-        background-color: #404040;
-    }
-    h1 {
-        color: #fff;
+
+#card9 {
+    @media screen and (max-width: 998px) {
+        display: none;    
     }
 }

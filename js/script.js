@@ -20,6 +20,7 @@ ck.addEventListener("change", () => {
     main.classList.toggle("dark");
     navWrapper.classList.toggle("dark");
     aboutWrapper.classList.toggle("dark");
+    console.log(aboutWrapper.classList);
     upWrapper.classList.toggle("dark");
     skills.classList.toggle("dark");
     // if (bottomWave.getAttribute("fill") === "#404040"){
@@ -63,6 +64,21 @@ const animate = (ele, del) => {
         delay: del
     });
 }
+
+const animateSkills = (ele, del) => {
+    gsap.to(ele, {
+        opacity: 1,
+        ease: Power2.easeIn,
+        top: 0,
+        scrollTrigger: {
+            trigger: skills,
+            start: 'top center',
+        },
+        duration: 0.5,
+        delay: del
+    });
+}
+
 gsap.to("#up-wrapper", {
     scrollTrigger: {
         trigger: main,
@@ -80,3 +96,14 @@ animate(".fa-hands-helping", 0.9);
 animate("#skill-1", 0.6)
 animate("#skill-2", 0.8)
 animate("#skill-3", 1)
+animate('#a-i1', 0.5);
+animate('#a-i2', 1.1);
+animate('#a-i3', 1.7);
+animateSkills("#card1", 0.2);
+animateSkills("#card2", 0.4);
+animateSkills("#card3", 0.6);
+animateSkills("#card4", 0.8);
+animateSkills("#card5", 1.2);
+animateSkills("#card6", 1.4);
+animateSkills("#card7", 1.6);
+animateSkills("#card8", 1.8);
