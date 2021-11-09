@@ -13,6 +13,7 @@
 body {
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
+  overflow-x: hidden;
 }
 
 body.dark {
@@ -678,6 +679,20 @@ body.dark {
 
 .skills.dark .skill-card-wrapper .skill-card h3, .skills.dark .skill-card-wrapper .skill-card p {
   color: #fff;
+}
+
+.projects h1 {
+  color: #2e2c2c;
+  margin-top: 100px;
+  font-size: clamp(3.3rem, 5.1vw, 5rem);
+  text-align: center;
+}
+
+.projects p {
+  color: #817b7b;
+  text-align: center;
+  margin-top: 20px;
+  font-size: clamp(1.5rem, 2.5vw, 1.8rem);
 }
 
 @media screen and (max-width: 998px) {

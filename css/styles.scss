@@ -13,6 +13,7 @@ $text-color: rgb(129, 123, 123);
 }
 body {
     transition: 0.2s all ease;
+    overflow-x: hidden;
     
 }
 body.dark {
@@ -442,7 +443,20 @@ body.dark {
         }
     }
 }
-
+.projects {
+    h1 {
+        color: $heading-color;
+        margin-top: 100px;
+        font-size: clamp(3.3rem, 5.1vw, 5rem);
+        text-align: center;
+    }
+    p {
+        color: $text-color;
+        text-align: center;
+        margin-top: 20px;
+        font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    }
+}
 #card9 {
     @media screen and (max-width: 998px) {
         display: none;    

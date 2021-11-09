@@ -29,7 +29,7 @@ ck.addEventListener("change", () => {
     // else {
     //     bottomWave.setAttribute("fill", "#404040");
     // }
-    if (topWave.getAttribute("fill") === "#404040"){
+    if (topWave.getAttribute("fill") === "#404040") {
         topWave.setAttribute("fill", "#0099ff");
     }
     else {
@@ -47,7 +47,7 @@ gsap.to(about, {
     scrollTrigger: {
         trigger: aboutWrapper,
         start: 'top center',
-    },  
+    },
     duration: 0.5,
 })
 
@@ -59,7 +59,7 @@ const animate = (ele, del) => {
         scrollTrigger: {
             trigger: about,
             start: 'top center',
-        },  
+        },
         duration: 0.5,
         delay: del
     });
@@ -107,3 +107,18 @@ animateSkills("#card5", 1.2);
 animateSkills("#card6", 1.4);
 animateSkills("#card7", 1.6);
 animateSkills("#card8", 1.8);
+
+gsap.to('.tmt-project', {
+
+    scrollTrigger: {
+        scrub: true,
+        trigger: '.projects',
+        start: 'top center',
+        end: 'top top',
+    },
+    opacity: 1,
+    top: "0px", 
+    left: "0px",
+    right: "0px",
+    duration: 0.4
+})
