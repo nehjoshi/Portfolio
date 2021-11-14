@@ -111,13 +111,26 @@ animateSkills("#card8", 1.8);
 gsap.to('.tmt-project', {
 
     scrollTrigger: {
-        scrub: true,
+        scrub: 0.1,
         trigger: '.projects',
         start: 'top center',
-        end: 'top top',
+        end: 'top 30vh',
     },
     opacity: 1,
-    top: "0px", 
+    top: "0px",
+    left: "0px",
+    right: "0px",
+    duration: 0.4
+})
+gsap.to('.projects2', {
+    scrollTrigger: {
+        scrub: 0.1,
+        trigger: '#row-2',
+        start: 'top center',
+        end: 'top 30vh',
+    },
+    opacity: 1,
+    top: "0px",
     left: "0px",
     right: "0px",
     duration: 0.4
