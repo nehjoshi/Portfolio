@@ -118,6 +118,7 @@ gsap.to('.tmt-project', {
     },
     opacity: 1,
     top: "0px",
+    width: "500px",
     left: "0px",
     right: "0px",
     duration: 0.4
@@ -125,7 +126,7 @@ gsap.to('.tmt-project', {
 gsap.to('.projects2', {
     scrollTrigger: {
         scrub: 0.1,
-        trigger: '#row-2',
+        trigger: '.row-2',
         start: 'top center',
         end: 'top 30vh',
     },

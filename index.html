@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Neh Joshi">
     <meta name="description" content="Neh Joshi's personal portfolio">
-    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/fc236c3dc0.js" crossorigin="anonymous"></script>
     <title>Neh Joshi | Web Developer</title>
 </head>
@@ -42,11 +42,11 @@
     <div id="up-wrapper" onClick="scrollUp()">
         <i class="fas fa-chevron-up"></i>
     </div>
-    <main class="main" >
-        <h1 >Hi. I'm Neh.</h1>
-        <div class="slider-wrapper" > 
+    <main class="main">
+        <h1>Hi. I'm Neh.</h1>
+        <div class="slider-wrapper">
             I am
-            <div class="slider" >
+            <div class="slider">
                 <div class="slider-text1">an undergraduate</div>
                 <div class="slider-text2">an avid reader</div>
                 <div class="slider-text3">a web Developer</div>
@@ -184,30 +184,92 @@
 
     </div> -->
     <section class="projects">
-        
-        
+
+
         <h1>My Work</h1>
         <p>A collection of projects based on a variety of development frameworks</p>
         <div class="row">
-            <img src="/images/focus.png" style="opacity: 0; position: relative; top: -300px; width: 500px; left: -300px" class="tmt-project"/> 
-            <img src="/images/tmt.png" style="opacity: 0;  position: relative; top: 300px; width: 500px" class="tmt-project"/> 
-            <img src="/images/project-tools.png" style="opacity: 0; float: right; position: relative; width: 500px; top: -300px; right: -300px" class="tmt-project"/> 
+            <div class="card">
+                <img src="/images/focus.png"
+                    style="opacity: 0; position: relative; top: -300px; width: 1000px; left: -300px"
+                    class="tmt-project" />
+                <div class="card-body">
+                    <h5 class="card-title">Focus</h5>
+                    <p class="card-text">A sample website for serving useful resources and software. Built using pure
+                        HTMl, CSS and JavaScript. </p>
+                    <a href="https://focus-store.netlify.app/" target="_blank" class="btn btn-primary">Visit
+                        Website</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/tmt.png" style="opacity: 0;  position: relative; top: 300px; width: 250px"
+                    class="tmt-project" />
+                <div class="card-body">
+                    <h5 class="card-title">The Mirror Test</h5>
+                    <p class="card-text">A comprehensive compilation of some of the most useful questionnaires on
+                        psychology and emotional health. Includes cool features like PDF generation and AutoSave!</p>
+                    <a href="https://the-mirror-test.netlify.app/" target="_blank" class="btn btn-primary">Visit
+                        Website</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/project-tools.png"
+                    style="opacity: 0; float: right; position: relative; width: 1000px; top: -300px; right: -300px"
+                    class="tmt-project" />
+                <div class="card-body">
+                    <h5 class="card-title">OWASP - Project Tools</h5>
+                    <p class="card-text">A website describing an open initiative by OWASP VITCC - Project - tools,
+                        including the aim of the project, the contributors, and more information.</p>
+                    <a href="https://focus-app.herokuapp.com/" target="_blank" class="btn btn-primary">Visit
+                        Website</a>
+                </div>
+            </div>
         </div>
-        <div class="row" id="row-2">
-            <img src="/images/focus.png" style="opacity: 0; position: relative; top: 300px; width: 500px; left: -300px" class="projects2" />
-            <img src="/images/neh-blogs.png" style="opacity: 0;  position: relative; top: -300px; width: 500px" class="projects2"/> 
-            <img src="/images/owasp-social.png" style="opacity: 0; float: right; position: relative; width: 500px; top: 300px; right: -300px" class="projects2"/> 
+        <div class="row row-2" >
+
+            <div class="card">
+                <img src="/images/focus.png" style="opacity: 0; position: relative; top: 300px; width: 500px; left: -300px"
+                class="projects2" />
+                <div class="card-body">
+                    <h5 class="card-title">OWASP - Project Tools</h5>
+                    <p class="card-text">A website describing an open initiative by OWASP VITCC - Project - tools,
+                        including the aim of the project, the contributors, and more information.</p>
+                    <a href="https://focus-app.herokuapp.com/" target="_blank" class="btn btn-primary">Visit
+                        Website</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/neh-blogs.png" style="opacity: 0;  position: relative; top: 300px; width: 500px"
+                class="projects2" />
+                <div class="card-body">
+                    <h5 class="card-title">Personal Blog Page</h5>
+                    <p class="card-text">A website describing an open initiative by OWASP VITCC - Project - tools,
+                        including the aim of the project, the contributors, and more information.</p>
+                    <a href="https://focus-app.herokuapp.com/" target="_blank" class="btn btn-primary">Visit
+                        Website</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/owasp-social.png"
+                style="opacity: 0; float: right; position: relative; width: 500px; top: 300px; right: -300px"
+                class="projects2" />
+                <div class="card-body">
+                    <h5 class="card-title">OWASP - SOCIAL</h5>
+                    <p class="card-text">A website describing an open initiative by OWASP VITCC - Project - tools,
+                        including the aim of the project, the contributors, and more information.</p>
+                    <a href="https://focus-app.herokuapp.com/" target="_blank" class="btn btn-primary">Visit
+                        Website</a>
+                </div>
+            </div>
         </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi minus recusandae doloremque rerum est ut dignissimos voluptatibus. Illum corrupti aliquam sequi aut minus iusto minima dolores vel animi. Pariatur, magnam?</p>
-            <br/><br/><br/><br/>
-        </div>
+        <br /><br /><br /><br />
     </section>
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
