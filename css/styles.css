@@ -566,6 +566,15 @@ a {
   }
 }
 
+@media screen and (max-width: 760px) {
+  .tmt-project {
+    opacity: 1 !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .projects.dark h1 {
   color: #fff;
 }
