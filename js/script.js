@@ -9,6 +9,9 @@ const about = document.querySelector(".about-heading");
 const aboutWrapper = document.querySelector(".about");
 const upWrapper = document.getElementById("up-wrapper");
 const skills = document.querySelector(".skills");
+const projects = document.querySelector(".projects");
+const cardBody = document.querySelector(".card-body");
+const resumeSection = document.querySelector(".resume-section")
 const scrollUp = () => {
     window.scrollTo(0, 0);
 }
@@ -20,9 +23,11 @@ ck.addEventListener("change", () => {
     main.classList.toggle("dark");
     navWrapper.classList.toggle("dark");
     aboutWrapper.classList.toggle("dark");
-    console.log(aboutWrapper.classList);
+    console.log(cardBody);
     upWrapper.classList.toggle("dark");
     skills.classList.toggle("dark");
+    projects.classList.toggle('dark')
+    resumeSection.classList.toggle('dark')
     // if (bottomWave.getAttribute("fill") === "#404040"){
     //     bottomWave.setAttribute("fill", "#0099ff");
     // }

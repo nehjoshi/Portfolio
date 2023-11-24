@@ -14,10 +14,13 @@ $text-color: rgb(129, 123, 123);
 body {
     transition: 0.2s all ease;
     overflow-x: hidden;
-    
+   
 }
 body.dark {
     background-color: rgb(34, 33, 33);
+}
+a {
+    color: inherit;
 }
 #up-wrapper {
     display: flex;
@@ -308,7 +311,7 @@ body.dark {
         p {
             color: $text-color;
             line-height: 150%;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         width: 50%;
         @media screen and (max-width: 998px) {
@@ -325,6 +328,9 @@ body.dark {
             @media screen and (max-width: 998px) {
                 height: 250px !important;
             }
+        }
+        #profile-img {
+            border-radius: 50%;
         }
     }
 }
@@ -383,7 +389,7 @@ body.dark {
         }
         p {
             color: rgb(54, 54, 54);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             line-height: 135%;
         }
     }
@@ -457,11 +463,6 @@ body.dark {
         font-size: clamp(1.5rem, 2.5vw, 1.8rem);
     }
 }
-#card9 {
-    @media screen and (max-width: 998px) {
-        display: none;    
-    }
-}
 .row {
     display: flex;
     justify-content: center;
@@ -497,5 +498,98 @@ body.dark {
         width: 90%;
         margin: 20px 0px;
     
+    }
+}
+.projects.dark {
+    h1 {
+        color: #fff;
+    }
+    .card-body {
+        h5, a{
+            color: #fff;
+        }
+    }
+}
+.resume-section {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    flex-direction: column;
+    h1 {
+        color: $heading-color;
+        margin: 0 auto;
+        margin-top: 100px;
+        font-size: clamp(3.3rem, 5.1vw, 5rem);
+    }
+    p {
+        color: $text-color;
+        margin: 10px auto;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .resume-container{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .preview-resume {
+            object-fit: contain;
+            margin: 10px auto;
+            width: 650px;
+            border: 2px solid silver;
+            transition: filter 0.25s ease;
+            @media screen and (max-width: 998px) {
+                width: 90%;
+            }
+            // &:hover{
+            //     filter: brightness(30%);
+            // }
+        }
+        p {
+            position: absolute;
+            font-size: clamp(1.2rem, 2.1vw, 2rem);
+            text-align: center;
+            line-height: 100%;
+            opacity: 0;
+            transition: opacity 0.25s ease-in-out;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+        &:hover{
+            img {
+                filter: brightness(30%);
+            }
+            p {
+                opacity: 1;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    h2 {
+        color: $heading-color;
+        text-align: center;
+        font-size: clamp(2.5rem, 3.1vw, 3rem);
+        margin: 20px auto;
+    }
+    .icon-container {
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+        i {
+            font-size: 1.8rem;
+            color:rgb(223, 55, 17)
+        }
+    }
+    
+}
+.resume-section.dark {
+    h1, h2 {
+        color: #fff;
     }
 }
