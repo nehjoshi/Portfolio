@@ -378,17 +378,21 @@ a {
   }
 }
 .about-inner .about-img-wrapper {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: center;
-  position: relative;
+}
+@media screen and (max-width: 998px) {
+  .about-inner .about-img-wrapper img {
+    height: 250px !important;
+  }
 }
 .about-inner .about-img-wrapper #profile-img {
   border-radius: 50%;
-  width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 300px;
 }
 
 .about.dark h1 {
