@@ -378,17 +378,17 @@ a {
   }
 }
 .about-inner .about-img-wrapper {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: center;
-}
-@media screen and (max-width: 998px) {
-  .about-inner .about-img-wrapper img {
-    height: 250px !important;
-  }
+  position: relative;
 }
 .about-inner .about-img-wrapper #profile-img {
   border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about.dark h1 {

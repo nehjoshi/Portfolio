@@ -321,16 +321,16 @@ a {
         }
     }
     .about-img-wrapper {
-        width: 40%;
+        width: 30%;
+        // aspect-ratio: 1/1;   
         display: flex;
         justify-content: center;
-        img {
-            @media screen and (max-width: 998px) {
-                height: 250px !important;
-            }
-        }
+        position: relative;
         #profile-img {
             border-radius: 50%;
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
         }
     }
 }
