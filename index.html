@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Neh Joshi">
     <meta name="description" content="Neh Joshi's personal portfolio">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <script src="https://kit.fontawesome.com/fc236c3dc0.js" crossorigin="anonymous"></script>
     <title>Neh Joshi | Software Engineer</title>
 </head>
@@ -22,7 +22,7 @@
         </label>
     </div>
     <nav class="nav">
-        <h2>Neh Joshi</h2>
+        <p>Neh Joshi</p>
         <ul class="nav-links">
             <li><a href="#about">About Me</a></li>
             <li><a href='#projects'>Projects</a></li>
@@ -72,7 +72,7 @@
 
 
     <section class="about" id="about">
-        <h1 class="about-heading">About Me</h1>
+        <h2 class="about-heading">About Me</h2>
         <div class="about-inner" id="a-i1">
             <div class="about-text a-t1">
                 <h3 class="about-text-h3">Who I Am</h3>
@@ -83,7 +83,7 @@
                     (go Cavaliers!). I am actively looking for software developer positions.</p>
             </div>
             <div class="about-img-wrapper">
-                <img src="images/profile.jpg" id="profile-img">
+                <img src="images/profile.jpg" id="profile-img" alt="Me on Brooklyn Bridge wearing sunglasses.">
             </div>
         </div><br /><br />
         <div class="about-inner" id="a-i2">
@@ -99,7 +99,7 @@
                     work was open-source.</p>
             </div>
             <div class="about-img-wrapper">
-                <img src="images/certificate.webp" style="height: 300px">
+                <img src="images/certificate.webp" style="height: 300px" alt="A Certificate of Recognition from OWASP for my contributions.">
             </div>
         </div><br />
         <div class="about-inner" id="a-i3">
@@ -112,59 +112,59 @@
                 </p>
             </div>
             <div class="about-img-wrapper">
-                <img src="images/web.webp" style="height: 500px">
+                <img src="images/web.webp" style="height: 500px" alt="A computer with a phone beside it.">
             </div>
         </div>
     </section>
     <section class="skills">
-        <h1>Skills</h1>
+        <h2>Skills</h2>
         <div class="skill-card-wrapper">
             <div class="skill-card" id="card1">
-                <img src="images/react-logo.webp" style="height: 100px">
+                <img src="images/react-logo.webp" style="height: 100px" aria-hidden="true" alt="">
                 <h3>React.JS</h3>
                 <p>I've always loved React.JS, and it's evolved so much since I first learnt it!</p>
             </div>
             <div class="skill-card" id="card2">
-                <img src="images/html-logo.webp" style="height: 100px;">
+                <img src="images/html-logo.webp" style="height: 100px;" aria-hidden="true" alt="">
                 <h3>HTML</h3>
                 <p>Not much to say about HTML. The most fundamental language a web developer starts off with.</p>
             </div>
             <div class="skill-card" id="card3">
-                <img src="images/sass-logo.webp" style="height: 100px">
+                <img src="images/sass-logo.webp" style="height: 100px" aria-hidden="true" alt="">
                 <h3>SASS</h3>
                 <p>One of the most powerful CSS preprocessors - certainly my favorite!</p>
             </div>
         </div>
         <div class="skill-card-wrapper">
             <div class="skill-card" id="card4">
-                <img src="images/js-logo.webp" style="height: 100px">
+                <img src="images/js-logo.webp" style="height: 100px" aria-hidden="true" alt="">
                 <h3>JavaScript</h3>
                 <p>A language that always keeps evolving - a challenge for web developers! </p>
             </div>
             <div class="skill-card" id="card5">
-                <img src="images/node-logo.webp" style="height: 80px;">
+                <img src="images/node-logo.webp" style="height: 80px;" aria-hidden="true" alt="">
                 <h3>Node.Js</h3>
                 <p>Who doesn't love running JS outside of a browser?</p>
             </div>
             <div class="skill-card" id="card6">
-                <img src="images/mdb-logo.webp" style="height: 100px">
+                <img src="images/mdb-logo.webp" style="height: 100px" aria-hidden="true" alt="">
                 <h3>MongoDB</h3>
                 <p>Undoubtedly the king of NoSQL databases!</p>
             </div>
         </div>
         <div class="skill-card-wrapper">
             <div class="skill-card" id="card7">
-                <img src="images/gatsby-logo.webp" style="height: 100px">
+                <img src="images/gatsby-logo.webp" style="height: 100px" aria-hidden="true" alt="">
                 <h3>Gatsby-js</h3>
                 <p>It never hurts to learn a static site generator!</p>
             </div>
             <div class="skill-card" id="card8">
-                <img src="images/rwd.webp" style="height: 80px;">
+                <img src="images/rwd.webp" style="height: 80px;" aria-hidden="true" alt="">
                 <h3>Responsive Web Design</h3>
                 <p>To make websites scalable, fast, and mobile-friendly - an essential modern requirement.</p>
             </div>
             <div class="skill-card" id="card8">
-                <img src="images/next-logo.png" style="height: 100px;">
+                <img src="images/next-logo.png" style="height: 100px;" aria-hidden="true" alt="">
                 <h3>Next.JS</h3>
                 <p>Can't resist Next.JS if you're a React.JS lover like me!</p>
             </div>
@@ -172,17 +172,17 @@
     </section>
 
     <section class="projects" id="projects">
-
-
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <p>A collection of projects I've worked on over the years.</p>
         <div class="row">
             <div class="card">
                 <img src="/images/study-mate.png"
                     style="opacity: 0; position: relative; top: -300px; width: 1000px; left: -300px"
-                    class="tmt-project" />
+                    class="tmt-project" 
+                    alt="A phone with the StudyMate website opened up"
+                    />
                 <div class="card-body">
-                    <h5 class="card-title">Study Mate</h5>
+                    <h3 class="card-title">Study Mate</h3>
                     <p class="card-text">A MERN app for providing continuous and automatic math homework to school
                         students. Includes regular contests, leaderboards and statistics!</p>
                     <a href="https://github.com/nehjoshi/study-mate" target="_blank" class="btn btn-primary">View
@@ -191,9 +191,11 @@
             </div>
             <div class="card">
                 <img src="/images/tmt.png" style="opacity: 0;  position: relative; top: 300px; width: 250px"
-                    class="tmt-project" />
+                    class="tmt-project" 
+                    alt="A phone with the Mirror Test website opened up"
+                    />
                 <div class="card-body">
-                    <h5 class="card-title">The Mirror Test</h5>
+                    <h3 class="card-title">The Mirror Test</h3>
                     <p class="card-text">A full-stack web app that offers a reflection of who you really are based on
                         several mental health
                         and emotional wellbeing questionnaires. Includes cool features like PDF generation and AutoSave!
@@ -205,9 +207,11 @@
             <div class="card">
                 <img src="/images/project-tools.png"
                     style="opacity: 0; float: right; position: relative; width: 1000px; top: -300px; right: -300px"
-                    class="tmt-project" />
+                    class="tmt-project" 
+                    alt="A phone with the Project Tools website opened up"
+                    />
                 <div class="card-body">
-                    <h5 class="card-title">OWASP - Project Tools</h5>
+                    <h3 class="card-title">OWASP - Project Tools</h3>
                     <p class="card-text">A website describing an open initiative by OWASP VITCC - Project - tools,
                         including the aim of the project, the contributors, and more information.</p>
                     <a href="https://github.com/nehjoshi/project-tools-static" target="_blank" class="btn btn-primary">
@@ -219,14 +223,14 @@
     </section>
 
     <section class="resume-section" id="contact">
-        <h1>Still here?</h1>
+        <h2>Still here?</h2>
         <p>Why not check out my resume while you're at it?</p>
         <div class="resume-container">
-            <img src="/images/resume-preview.jpg" class="preview-resume"></img>
+            <img src="/images/resume-preview.jpg" class="preview-resume" alt="A preview of my resume"></img>
             <p><a href="https://drive.google.com/file/d/19L9PvyhjoPGkVX1JnMJVztr_so17Ggwg/view?usp=sharing" target="_blank">View Resume</a></p>
         </div>
 
-        <h2>Find Me on Social Media</h2>
+        <h3>Find Me on Social Media</h3>
         <div class='icon-container'>
             <a href='https://www.instagram.com/neh.joshi.98/' target="_blank"><i class="bi bi-instagram"></i></a>
             <a href='https://www.linkedin.com/in/nehjoshi/' target="_blank"><i class="bi bi-linkedin"></i></a>

@@ -65,11 +65,13 @@ a {
     padding: 20px 0px 20px 0px;
   }
 }
-.nav h2 {
+.nav p {
+  font-weight: bold;
+  font-size: 1.5rem;
   display: inline-block;
 }
 @media screen and (max-width: 760px) {
-  .nav h2 {
+  .nav p {
     text-align: center;
     display: block;
   }
@@ -334,7 +336,7 @@ a {
     width: 90%;
   }
 }
-.about h1 {
+.about h2 {
   text-align: center;
   font-size: 5rem;
   position: relative;
@@ -395,7 +397,7 @@ a {
   height: 300px;
 }
 
-.about.dark h1 {
+.about.dark h2 {
   color: #fff;
 }
 .about.dark .about-inner > .about-text > h3 {
@@ -409,7 +411,7 @@ a {
   width: 100%;
   margin-top: 30px;
 }
-.skills h1 {
+.skills h2 {
   color: rgb(46, 44, 44);
   font-size: 5rem;
   text-align: center;
@@ -506,7 +508,7 @@ a {
   top: 30px;
 }
 
-.skills.dark h1 {
+.skills.dark h2 {
   color: #fff;
 }
 .skills.dark .skill-card-wrapper .skill-card {
@@ -516,7 +518,7 @@ a {
   color: #fff;
 }
 
-.projects h1 {
+.projects h2 {
   color: rgb(46, 44, 44);
   margin-top: 100px;
   font-size: clamp(3.3rem, 5.1vw, 5rem);
@@ -552,6 +554,9 @@ a {
 .card .card-body {
   width: 100%;
 }
+.card .card-body a {
+  text-decoration: underline;
+}
 .card .card-body .card-title {
   color: rgb(46, 44, 44);
   font-size: 2.5rem;
@@ -579,10 +584,10 @@ a {
   }
 }
 
-.projects.dark h1 {
+.projects.dark h2 {
   color: #fff;
 }
-.projects.dark .card-body h5, .projects.dark .card-body a {
+.projects.dark .card-body h3, .projects.dark .card-body a {
   color: #fff;
 }
 
@@ -593,7 +598,7 @@ a {
   margin-bottom: 30px;
   flex-direction: column;
 }
-.resume-section h1 {
+.resume-section h2 {
   color: rgb(46, 44, 44);
   margin: 0 auto;
   margin-top: 100px;
@@ -646,7 +651,7 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
-.resume-section h2 {
+.resume-section h3 {
   color: rgb(46, 44, 44);
   text-align: center;
   font-size: clamp(2.5rem, 3.1vw, 3rem);
@@ -662,6 +667,6 @@ a {
   color: rgb(223, 55, 17);
 }
 
-.resume-section.dark h1, .resume-section.dark h2 {
+.resume-section.dark h2, .resume-section.dark h3 {
   color: #fff;
 }/*# sourceMappingURL=styles.css.map */
