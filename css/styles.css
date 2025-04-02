@@ -194,7 +194,7 @@ a {
 
 .slider-wrapper {
   font-size: clamp(1.6rem, 2.1vw, 2rem);
-  color: rgb(129, 123, 123);
+  color: rgb(78, 78, 78);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +284,7 @@ a {
   text-align: center;
   line-height: 170%;
   transition: 0.2s all ease;
-  color: rgb(129, 123, 123);
+  color: rgb(78, 78, 78);
 }
 
 .main-button {
@@ -369,7 +369,7 @@ a {
   line-height: 130%;
 }
 .about-inner .about-text p {
-  color: rgb(129, 123, 123);
+  color: rgb(78, 78, 78);
   line-height: 150%;
   font-size: 1.3rem;
 }
@@ -521,14 +521,14 @@ a {
 
 .projects h2 {
   color: rgb(46, 44, 44);
-  margin-top: 100px;
+  margin-top: 80px;
   font-size: clamp(3.3rem, 5.1vw, 5rem);
   text-align: center;
+  margin-bottom: 20px;
 }
 .projects p {
-  color: rgb(129, 123, 123);
+  color: rgb(78, 78, 78) !important;
   text-align: center;
-  margin-top: 20px;
   font-size: clamp(1.5rem, 2.5vw, 1.8rem);
 }
 
@@ -557,6 +557,8 @@ a {
 }
 .card .card-body a {
   text-decoration: underline;
+  margin-top: 20px !important;
+  display: block;
 }
 .card .card-body .card-title {
   color: rgb(46, 44, 44);
@@ -564,9 +566,9 @@ a {
   margin-top: 10px;
 }
 .card .card-body .card-text {
-  color: rgb(129, 123, 123);
+  color: rgb(78, 78, 78);
   font-size: 1.2rem;
-  margin-top: 0px;
+  margin-top: 20px;
   line-height: 27px;
 }
 @media screen and (max-width: 998px) {
@@ -591,6 +593,9 @@ a {
 .projects.dark .card-body h3, .projects.dark .card-body a {
   color: #fff;
 }
+.projects.dark p {
+  color: rgb(196, 196, 196) !important;
+}
 
 .resume-section {
   width: 80%;
@@ -606,7 +611,7 @@ a {
   font-size: clamp(3.3rem, 5.1vw, 5rem);
 }
 .resume-section p {
-  color: rgb(129, 123, 123);
+  color: rgb(78, 78, 78);
   margin: 10px auto;
   font-size: 2rem;
   text-align: center;
@@ -670,4 +675,7 @@ a {
 
 .resume-section.dark h2, .resume-section.dark h3 {
   color: #fff;
+}
+.resume-section.dark p {
+  color: rgb(196, 196, 196);
 }/*# sourceMappingURL=styles.css.map */
